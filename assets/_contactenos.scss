@@ -1,0 +1,83 @@
+section#contactenos{
+
+    .cont-contactenos{
+        width: 100%;
+        height: auto;
+        padding: 150px 25%;
+        background-color: $color5;
+        box-sizing: border-box;
+
+        a{
+            text-decoration: none;
+        }
+
+        .contactenos{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .tit-contactenos{
+                h2{
+                    font-family: $tipo3;
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+
+            .botones-contactenos{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                transition: 1s;
+
+                .color-whatsApp{
+                    background-color: $colorWhatsapp;
+                }
+                
+                .color-email{
+                    background-color:$colorEmail;
+                }
+
+                .btn-contactenos{
+                    width: 240px;
+                    height: 50px;
+                    margin: 20px;
+                    border-radius: 25px;
+                    border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 2s;
+
+
+                    h3{
+                        font-family: $tipo1;
+                        font-size: 17px;
+                        margin: 0px;
+                        color: #fff;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        text-align: center;
+                    }
+
+                }
+
+                :hover#btn-email, :hover#btn-whatsapp{
+                    background-color: $colorMarcaComple;
+                    transition: .5s;
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+}

@@ -1,0 +1,212 @@
+.cont-footer{
+    width: 100%;
+    padding: 50px 12.5%;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: $colorMarca;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 8px solid $colorMarca01;
+
+    .flex-footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .flex-footer-a{
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        .flex-footer-a, .flex-footer-b, .flex-footer-c, .flex-footer-d, .flex-footer-e, .flex-footer-f {
+            width: 16%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .footer-title{
+                width: 100%;
+
+                h5{
+                    font-family:$tipo3 ;
+                    font-size:16px ;
+                    font-weight: 800 ;
+                    letter-spacing: 1px;
+                    color: $color2;
+                    margin: 0px 0px 10px 0px;
+                }
+            }
+
+            .line-03-footer{
+                width: 25px;
+                border-bottom: 2px solid $colorMarcaComple;
+                margin-bottom: 10px;
+            }
+
+            .footer-datos{
+                h6{
+                    font-family:$tipo2 !important ;
+                    font-size:12px !important;
+                    font-weight: normal !important;
+                    line-height: 18px !important;
+                    letter-spacing: 1px !important;
+                    color: $color2 !important ;
+                    margin: 8px 0px !important;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+
+                :link{
+                    text-decoration: none;
+                }
+
+                :hover{
+                        opacity: .8;
+                }
+
+                :active{
+                    color:$color2;
+                }
+            }
+
+            .footer-redes{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+                .footer-redes-cubo{
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid $colorMarcaComple;
+                    margin: 5px;
+                    display: flex;
+                    justify-content: center;
+                    box-sizing: border-box;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        padding: 2px;
+                        box-sizing: border-box;
+                    }
+
+                    :hover{
+                        background-color: $colorMarcaComple;
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+        }        
+    
+    }
+
+}
+
+/*Mobile*/
+@media screen and (max-width:1170px){
+
+    .banda-footer{
+        margin-top: 44px;
+    }
+
+    .cont-footer{
+        padding: 50px 20px;
+        margin-top: 44px;
+    
+        .flex-footer{
+            flex-direction: column;
+            justify-content: left;
+    
+            .flex-footer-a{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                img{
+                    width: 80%;
+                    height: auto;
+                }
+            }
+    
+            .flex-footer-a, .flex-footer-b, .flex-footer-c, .flex-footer-d, .flex-footer-e, .flex-footer-f {
+                width: 100%;
+                flex-direction: column;
+                margin-bottom: 30px;
+    
+                .footer-title{
+                    width: 100%;
+    
+                    h5{
+                        font-family:$tipo3 ;
+                        font-size:19px ;
+                        font-weight: 800 ;
+                        letter-spacing: 1px;
+                        color: $color2;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+    
+                .footer-datos{
+                    h6{
+                        font-family:$tipo2 ;
+                        font-size:14px;
+                        letter-spacing: 1px;
+                        color: $color2;
+                        margin: 8px 0px;
+                    }
+                }
+    
+                .footer-redes{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+    
+                    .footer-redes-cubo{
+                        width: 60px;
+                        height: 60px; 
+                        border: 2px solid $colorMarcaComple;
+                        border-radius: 30px;
+                        justify-content: center;
+                        display: flex;
+
+                        img{
+                            width: 70%;
+                            height: auto;
+                        }
+
+                        :hover{
+                            background-color: none;
+                            display: none;
+                            cursor: pointer;
+                        }
+ 
+                    }
+    
+                }
+    
+            }        
+        
+        }
+    
+    }
+
+}

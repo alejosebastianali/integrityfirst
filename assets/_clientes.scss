@@ -1,0 +1,77 @@
+section#clientes{
+
+    .tit-clientes{
+        width: 100%;
+        height: auto;
+        padding: 100px 25%  0px 25%;
+        box-sizing: border-box;
+
+        h2{
+            font-family: $tipo3;
+            font-size: 20px;
+            margin: 0px;
+            color: $color5;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+.clientes {
+    width: 75%;
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+
+
+    overflow: hidden;
+        .slider {
+            animation: slidein 30s linear infinite;
+            white-space: nowrap;
+        
+            .logos {
+                width: 100%;
+                display: inline-block;
+                margin: 0px 0;
+            
+                .fab {
+                    width: calc(100% / 5);
+                    animation: fade-in 0.5s 
+                    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+                }
+            }
+
+            .logos img{
+                width: auto;
+                height: 70px;
+                margin: 20px 40px;
+            }
+        }
+    }
+  
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+
+  

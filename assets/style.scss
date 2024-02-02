@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$tipo1:'Roboto', sans-serif;
+$tipo2:'Roboto', sans-serif;
+$tipo3:'Montserrat', sans-serif;
+
+
+/*Colores*/
+
+$color1:#060A24;
+$color2:#FFFFFF;
+$color3:#666B6E;
+$color4:#595E60;
+$color5:#404345;
+
+$colorWhatsapp:#25D366;
+$colorEmail:#29ABE2;
+
+
+$colorGas:#FFC72F;
+$colorEnergia:#00A99D;
+$colorAsistencia:#005F27;
+
+$colorMarca:#005F27;
+$colorMarcaComple:#FFC72F;
+
+$colorMarca01:#306B48;
+$colorMarca02:#DFEBE4;
+$colorMarcaPush:#00471D;
+
+
+/*Compilado*/
+@import "_navbar";
+@import "_footer";
+@import "_selectores";
+@import "_masinfo";
+@import "_contactenos";
+@import "_clientes";
+

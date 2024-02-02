@@ -1,0 +1,175 @@
+
+section#servicios{
+
+    .cont-selector{
+        width: 100%;
+        height: auto;
+        padding: 160px 12.5%;
+        background-color: $colorMarca02;
+        box-sizing: border-box;
+
+        .selector{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+
+                .selector-titulo{
+                    width: 100%;
+
+                    h1{
+                        font-family: $tipo3;
+                        font-size: 36px ;
+                        letter-spacing: 1px;
+                        margin: 5px 0px;
+                        color: $colorMarca;
+                        font-weight: 800;
+                        text-align: center;
+                    }
+
+                    h2{
+                        font-family: $tipo3;
+                        font-size: 28px;
+                        margin: 5px 0px;
+                        color:$colorMarca;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+                }
+
+                .selector-card{
+                    width: 100%;
+                    padding-top: 50px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .card-servicios{
+                        width: 204px ;
+                        height: 204px;
+                        margin: 20px;
+                        padding:20px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        background-color: #fff ;
+                        border-radius: 25px;
+                        /*Horizontal Vertical Blur Extension*/
+                        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.1);
+                        transition: 3s;
+                        cursor: pointer;
+
+                        .icono-gas{
+                            background-image:url("..//images/icono_gas.svg");
+                            width: 90px;
+                            height: 90px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .icono-energia{
+                            background-image:url("..//images/icono_energia.svg");
+                            width: 90px;
+                            height: 90px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .icono-asistencia{
+                            background-image:url("..//images/icono_asistencia.svg");
+                            width: 90px;
+                            height: 90px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .linea-divisoria{
+                            width: 60px;
+                            height: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 30px;
+                            border-radius: 3px;
+                            background-color: $colorMarcaComple;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        h5{
+                            font-family: $tipo3;
+                            font-size: 24px;
+                            margin: 0px;
+                            color:$color3;
+                            font-weight: 700;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+
+                        &:hover#servicioGas{
+                            height: 280px;
+                            background-color: $colorGas;
+                            transition: 1s;
+
+                            h5{
+                                color: #fff;
+                            }
+
+                            .linea-divisoria{
+                                background-color: #fff;
+                            }
+
+                            .icono-gas{
+                                width: 90px;
+                                height: 90px;
+                                background-image:url("..//images/icono_gas_blanco.svg");
+                            }
+                        }
+
+                        &:hover#servicioEnergia{
+                            height: 280px;
+                            background-color: $colorEnergia;
+                            transition: 1s;
+
+                            h5{
+                                color: #fff;
+                            }
+
+                            .linea-divisoria{
+                                background-color: #fff;
+                            }
+
+                            .icono-energia{
+                                width: 90px;
+                                height: 90px;
+                                background-image:url("..//images/icono_energia_blanco.svg");
+                            }
+                        }
+                        
+                        &:hover#servicioAsistencia{
+                            height: 280px;
+                            background-color: $colorAsistencia;
+                            transition: 1s;
+
+                            h5{
+                                color: #fff;
+                            }
+
+                            .linea-divisoria{
+                                background-color: #fff;
+                            }
+
+                            .icono-asistencia{
+                                background-image:url("..//images/icono_asistencia_blanco.svg");
+                            }
+                        }
+
+                    }
+
+            }
+
+        }
+
+    }
+
+}
