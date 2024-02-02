@@ -81,3 +81,78 @@ section#contactenos{
     }
 
 }
+
+
+/*Mobile*/
+@media screen and (max-width:1170px){
+
+    section#contactenos{
+
+        .cont-contactenos{
+            width: 100%;
+            padding: 100px 20px;
+    
+            .contactenos{
+    
+                .tit-contactenos{
+                    h2{
+                        font-family: $tipo3;
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+    
+                .botones-contactenos{
+                    flex-direction: column;
+    
+                    .color-whatsApp{
+                        background-color: $colorWhatsapp;
+                    }
+                    
+                    .color-email{
+                        background-color:$colorEmail;
+                    }
+    
+                    .btn-contactenos{
+                        width: 240px;
+                        height: 50px;
+                        margin: 20px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 25px;
+                        border: 1px solid #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 2s;
+    
+    
+                        h3{
+                            font-family: $tipo1;
+                            font-size: 17px;
+                            margin: 0px;
+                            color: #fff;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            text-align: center;
+                        }
+    
+                    }
+    
+                    :hover#btn-email, :hover#btn-whatsapp{
+                        background-color: $colorMarcaComple;
+                        transition: .5s;
+                    }
+    
+    
+                }
+    
+    
+            }
+    
+        }
+    
+    }
+    
+
+}

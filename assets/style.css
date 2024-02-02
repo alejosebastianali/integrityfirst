@@ -320,7 +320,6 @@ h6 {
   }
   .cont-footer {
     padding: 50px 20px;
-    margin-top: 44px;
   }
   .cont-footer .flex-footer {
     flex-direction: column;
@@ -526,6 +525,28 @@ section#servicios .cont-selector .selector .selector-card .card-servicios:hover#
   background-image: url("..//images/icono_asistencia_blanco.svg");
 }
 
+/*Mobile*/
+@media screen and (max-width: 1170px) {
+  section#servicios .cont-selector {
+    padding: 80px 20px;
+  }
+  section#servicios .cont-selector .selector {
+    width: 100%;
+  }
+  section#servicios .cont-selector .selector .selector-titulo {
+    width: 100%;
+  }
+  section#servicios .cont-selector .selector .selector-card {
+    width: 100%;
+    padding-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
 section#informacion .cont-masinfo {
   width: 100%;
   padding: 100px 25%;
@@ -596,8 +617,67 @@ section#informacion .cont-masinfo .masinfo .masinfo-b {
 }
 section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
   margin-top: -180px;
+  text-align: center;
+}
+section#informacion .cont-masinfo .masinfo .masinfo-b img {
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
+/*Mobile*/
+@media screen and (max-width: 1170px) {
+  section#informacion .cont-masinfo {
+    width: 100%;
+    padding: 100px 20px;
+  }
+  section#informacion .cont-masinfo .masinfo {
+    flex-direction: column;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a {
+    width: 100%;
+    flex-direction: column;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .titulo-info h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin: 10px 0px;
+    color: #005F27;
+    font-weight: 700;
+    text-align: left;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .text-info {
+    width: 100%;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .text-info p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595E60;
+    font-weight: 500;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .acceso-info {
+    width: 200px;
+    height: 50px;
+    margin: 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .acceso-info .text-informacion {
+    width: 150px;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a .acceso-info .text-informacion h3 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-b {
+    width: 100%;
+    height: auto;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
+    margin-top: 0px;
+  }
+}
 section#contactenos .cont-contactenos {
   width: 100%;
   height: auto;
@@ -660,6 +740,53 @@ section#contactenos .cont-contactenos .contactenos .botones-contactenos :hover#b
   transition: 0.5s;
 }
 
+/*Mobile*/
+@media screen and (max-width: 1170px) {
+  section#contactenos .cont-contactenos {
+    width: 100%;
+    padding: 100px 20px;
+  }
+  section#contactenos .cont-contactenos .contactenos .tit-contactenos h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos {
+    flex-direction: column;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos .color-whatsApp {
+    background-color: #25D366;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos .color-email {
+    background-color: #29ABE2;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos .btn-contactenos {
+    width: 240px;
+    height: 50px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos .btn-contactenos h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  section#contactenos .cont-contactenos .contactenos .botones-contactenos :hover#btn-email, section#contactenos .cont-contactenos .contactenos .botones-contactenos :hover#btn-whatsapp {
+    background-color: #FFC72F;
+    transition: 0.5s;
+  }
+}
 section#clientes .tit-clientes {
   width: 100%;
   height: auto;
@@ -716,5 +843,64 @@ section#clientes .clientes .slider .logos img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 1170px) {
+  section#clientes .tit-clientes {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px 0px 20px;
+    box-sizing: border-box;
+  }
+  section#clientes .tit-clientes h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    color: #404345;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+  }
+  section#clientes .clientes {
+    width: 100%;
+    padding: 50px 0px;
+    overflow: hidden;
+  }
+  section#clientes .clientes .slider {
+    animation: slidein 5s linear infinite;
+    white-space: nowrap;
+  }
+  section#clientes .clientes .slider .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0;
+  }
+  section#clientes .clientes .slider .logos .fab {
+    width: 20%;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  }
+  section#clientes .clientes .slider .logos img {
+    width: auto;
+    height: 70px;
+    margin: 20px 40px;
+  }
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }/*# sourceMappingURL=style.css.map */

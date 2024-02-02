@@ -173,3 +173,37 @@ section#servicios{
     }
 
 }
+
+/*Mobile*/
+@media screen and (max-width:1170px){
+    section#servicios{
+
+        .cont-selector{
+            padding: 80px 20px;
+
+            .selector{
+                width: 100%;
+    
+                    .selector-titulo{
+                        width: 100%;
+                    }
+    
+                    .selector-card{
+                        width: 100%;
+                        padding-top: 50px;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;    
+                }
+    
+            }
+    
+        }
+    
+    }
+
+
+}
