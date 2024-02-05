@@ -2,7 +2,7 @@ section#informacion{
 
     .cont-masinfo{
         width: 100%;
-        padding: 100px 25%;
+        padding: 40px 25% 0px 25%;
         box-sizing: border-box;
 
         .masinfo{
@@ -87,15 +87,15 @@ section#informacion{
                 height: auto;
 
                 .desplazamiento-up{
-                    margin-top: -180px;
+                    margin-top: -150px;
                     text-align: center;
                 }
 
-                img{
-                    width: 100%;
-                    height: auto;
+                .desplazamiento-down{
+                    margin-bottom: -120px;
                     text-align: center;
                 }
+
 
             }
         }
@@ -109,7 +109,7 @@ section#informacion{
 
         .cont-masinfo{
             width: 100%;
-            padding: 100px 20px;
+            padding: 50px 20px;
     
             .masinfo{
                 flex-direction: column;
@@ -117,6 +117,11 @@ section#informacion{
                 .masinfo-a{
                     width: 100%;
                     flex-direction: column;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
+                    }
     
                     .titulo-info{
                         h2{
@@ -163,9 +168,16 @@ section#informacion{
                 .masinfo-b{
                     width: 100%;
                     height: auto;
+                    order: 2;
     
                     .desplazamiento-up{
                         margin-top: 0px;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
                     }
     
                 }

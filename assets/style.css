@@ -30,7 +30,6 @@ header nav ul {
   background-color: #00471D;
   overflow: hidden;
   list-style-type: none;
-  border: 2px solid #306B48;
 }
 header nav ul a {
   display: block;
@@ -57,7 +56,7 @@ header nav .logo {
   display: block;
   padding: 10px 16px;
   width: 24px;
-  height: 24px;
+  height: 50px;
 }
 header nav .logo img {
   width: 150px;
@@ -549,7 +548,7 @@ section#servicios .cont-selector .selector .selector-card .card-servicios:hover#
 }
 section#informacion .cont-masinfo {
   width: 100%;
-  padding: 100px 25%;
+  padding: 40px 25% 0px 25%;
   box-sizing: border-box;
 }
 section#informacion .cont-masinfo .masinfo {
@@ -616,12 +615,11 @@ section#informacion .cont-masinfo .masinfo .masinfo-b {
   height: auto;
 }
 section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
-  margin-top: -180px;
+  margin-top: -150px;
   text-align: center;
 }
-section#informacion .cont-masinfo .masinfo .masinfo-b img {
-  width: 100%;
-  height: auto;
+section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-down {
+  margin-bottom: -120px;
   text-align: center;
 }
 
@@ -629,7 +627,7 @@ section#informacion .cont-masinfo .masinfo .masinfo-b img {
 @media screen and (max-width: 1170px) {
   section#informacion .cont-masinfo {
     width: 100%;
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
   section#informacion .cont-masinfo .masinfo {
     flex-direction: column;
@@ -637,6 +635,11 @@ section#informacion .cont-masinfo .masinfo .masinfo-b img {
   section#informacion .cont-masinfo .masinfo .masinfo-a {
     width: 100%;
     flex-direction: column;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-a img {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
   section#informacion .cont-masinfo .masinfo .masinfo-a .titulo-info h2 {
     font-family: "Montserrat", sans-serif;
@@ -673,9 +676,15 @@ section#informacion .cont-masinfo .masinfo .masinfo-b img {
   section#informacion .cont-masinfo .masinfo .masinfo-b {
     width: 100%;
     height: auto;
+    order: 2;
   }
   section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
     margin-top: 0px;
+  }
+  section#informacion .cont-masinfo .masinfo .masinfo-b img {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
 }
 section#contactenos .cont-contactenos {
@@ -748,7 +757,7 @@ section#contactenos .cont-contactenos .contactenos .botones-contactenos :hover#b
   }
   section#contactenos .cont-contactenos .contactenos .tit-contactenos h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
   }
   section#contactenos .cont-contactenos .contactenos .botones-contactenos {
@@ -870,7 +879,7 @@ section#clientes .clientes .slider .logos img {
     overflow: hidden;
   }
   section#clientes .clientes .slider {
-    animation: slidein 5s linear infinite;
+    animation: slidein 30s linear infinite;
     white-space: nowrap;
   }
   section#clientes .clientes .slider .logos {
@@ -902,5 +911,91 @@ section#clientes .clientes .slider .logos img {
     100% {
       opacity: 1;
     }
+  }
+}
+section#alcance .cont-alcance {
+  width: 100%;
+  height: auto;
+  padding: 150px 12.5%;
+  background-color: #DFEBE4;
+  box-sizing: border-box;
+}
+section#alcance .cont-alcance .alcance {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section#alcance .cont-alcance .alcance .alcance-data {
+  margin: 30px;
+  width: 30%;
+  text-align: center;
+}
+section#alcance .cont-alcance .alcance .alcance-data .linea-soporte {
+  width: 100px;
+  height: 6px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #005F27;
+}
+section#alcance .cont-alcance .alcance .alcance-data h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 20px 0px;
+  color: #005F27;
+  font-weight: 400;
+  text-align: center;
+}
+section#alcance .cont-alcance .progress-number {
+  margin: 25px auto 10px auto;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #005F27;
+  font-weight: bold;
+}
+
+/*Mobile*/
+@media screen and (max-width: 1170px) {
+  section#alcance .cont-alcance {
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+    box-sizing: border-box;
+  }
+  section#alcance .cont-alcance .alcance {
+    flex-direction: column;
+  }
+  section#alcance .cont-alcance .alcance .alcance-data {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  section#alcance .cont-alcance .alcance .alcance-data .linea-soporte {
+    width: 100px;
+    height: 6px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #005F27;
+  }
+  section#alcance .cont-alcance .alcance .alcance-data h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin: 20px 0px;
+    color: #005F27;
+    font-weight: 400;
+    text-align: center;
+  }
+  section#alcance .cont-alcance .progress-number {
+    margin: 25px auto 10px auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    color: #005F27;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=style.css.map */

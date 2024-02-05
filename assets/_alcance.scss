@@ -1,0 +1,112 @@
+section#alcance{
+
+  .cont-alcance{
+    width: 100%;
+    height: auto;
+    padding: 150px 12.5%;
+    background-color:$colorMarca02;
+    box-sizing: border-box;
+
+    .alcance{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .alcance-data{
+        margin: 30px;
+        width: 30%;
+        text-align: center;
+
+        .linea-soporte{
+          width: 100px;
+          height: 6px;
+          border-radius: 3px;
+          margin-left: auto;
+          margin-right:auto ;         
+          background-color: $colorMarca;
+        }
+
+
+        h5{
+          font-family: $tipo3;
+          font-size: 24px;
+          margin: 20px 0px;
+          color:$colorMarca;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+
+      }
+
+      .progress-number {
+        margin: 25px auto 10px auto;
+        text-align: center;
+        font-size: 60px;
+        font-family: $tipo3;
+        color: $colorMarca;
+        font-weight: bold
+      }
+
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width:1170px){
+
+  section#alcance{
+
+    .cont-alcance{
+      width: 100%;
+      height: auto;
+      padding: 100px 20px;
+      box-sizing: border-box;
+
+  
+      .alcance{
+        flex-direction: column;
+  
+        .alcance-data{
+          margin: 10px 0px;
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+  
+          .linea-soporte{
+            width: 100px;
+            height: 6px;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right:auto ;         
+            background-color: $colorMarca;
+          }
+  
+  
+          h5{
+            font-family: $tipo3;
+            font-size: 24px;
+            margin: 20px 0px;
+            color:$colorMarca;
+            font-weight: 400;
+            text-align: center;
+          }
+        }
+  
+        }
+  
+        .progress-number {
+          margin: 25px auto 10px auto;
+          text-align: center;
+          font-size: 60px;
+          font-family: $tipo3;
+          color: $colorMarca;
+          font-weight: bold
+        }
+  
+    }
+  }
+
+
+}
