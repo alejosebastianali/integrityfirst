@@ -26,12 +26,17 @@ $colorEmail:#29ABE2;
 
 
 $colorGas:#FFC72F;
+$colorPush:#25D366;
+$colorGas01:#FFF8E5;
+$colorGas02:#DFAE29;
+
 $colorEnergia:#00A99D;
+$colorEnergia01: #DFF4F3;
+$colorEnergia02: #006A62;
 $colorAsistencia:#005F27;
 
 $colorMarca:#005F27;
 $colorMarcaComple:#FFC72F;
-
 $colorMarca01:#306B48;
 $colorMarca02:#DFEBE4;
 $colorMarcaPush:#00471D;
@@ -45,4 +50,6 @@ $colorMarcaPush:#00471D;
 @import "_contactenos";
 @import "_clientes";
 @import "_alcance";
+@import "_general";
+@import "cardProductos";
 

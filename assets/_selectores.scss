@@ -46,6 +46,10 @@ section#servicios{
                     flex-direction: row;
                     justify-content: center;
 
+                    a{
+                        text-decoration: none;
+                    }
+
                     .card-servicios{
                         width: 204px ;
                         height: 204px;

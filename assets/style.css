@@ -422,6 +422,9 @@ section#servicios .cont-selector .selector .selector-card {
   flex-direction: row;
   justify-content: center;
 }
+section#servicios .cont-selector .selector .selector-card a {
+  text-decoration: none;
+}
 section#servicios .cont-selector .selector .selector-card .card-servicios {
   width: 204px;
   height: 204px;
@@ -997,5 +1000,291 @@ section#alcance .cont-alcance .progress-number {
     font-family: "Montserrat", sans-serif;
     color: #005F27;
     font-weight: bold;
+  }
+}
+/*General Desktop*/
+.color-serv-gral-gas {
+  background-color: #FFC72F;
+}
+
+.color-serv-gral-gas01 {
+  background-color: #FFF8E5;
+}
+
+.color-serv-gral-energia {
+  background-color: #00A99D;
+}
+
+.color-serv-gral-energia01 {
+  background-color: #DFF4F3;
+}
+
+.color-serv-gral-servicios {
+  background-color: #005F27;
+}
+
+.color-serv-gral-servicios01 {
+  background-color: #DFEBE4;
+}
+
+section#serviciosGenerales .cont-serv-gral {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 0px 25%;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: 0;
+  padding: 150px 50px 150px 0px;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv .tit-gral h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #005F27;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 55px;
+  text-align: left;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv .bajada-gral h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  color: #060A24;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-align: left;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv .descripcion-gral p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #060A24;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+section#serviciosGenerales .cont-serv-gral .imagen-gral {
+  width: 170px;
+  height: auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+section#serviciosGenerales .cont-serv-gral .imagen-gral img {
+  width: 120px;
+  height: auto;
+}
+
+/*Mobile General*/
+@media screen and (max-width: 1170px) {
+  section#serviciosGenerales .cont-serv-gral {
+    flex-direction: column;
+    padding: 50px 20px 30px 20px;
+    box-sizing: border-box;
+  }
+  section#serviciosGenerales .cont-serv-gral .data-serv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: 0;
+    padding: 50px 0px 50px 0px;
+  }
+  section#serviciosGenerales .cont-serv-gral .data-serv .tit-gral h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+  section#serviciosGenerales .cont-serv-gral .data-serv .bajada-gral h2 {
+    font-size: 21px;
+  }
+  section#serviciosGenerales .cont-serv-gral .data-serv .descripcion-gral p {
+    font-size: 14px;
+  }
+  section#serviciosGenerales .cont-serv-gral .imagen-gral {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  section#serviciosGenerales .cont-serv-gral .imagen-gral img {
+    width: 120px;
+    height: auto;
+  }
+}
+section#cardsProductos .borde-card#cardGas {
+  border-color: #FFC72F;
+}
+section#cardsProductos .borde-card#cardEnergia {
+  border-color: #00A99D;
+}
+section#cardsProductos .download::before {
+  content: "Descargar";
+}
+section#cardsProductos .cont-productos {
+  width: 100%;
+  padding: 50px 12.5%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+section#cardsProductos .cont-productos h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: center;
+}
+section#cardsProductos .cont-productos .tit-productos#titGas {
+  color: #DFAE29;
+}
+section#cardsProductos .cont-productos .tit-productos#titEnergia {
+  color: #006A62;
+}
+section#cardsProductos .gral-productos {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#cardsProductos .cont-cardproducto {
+  width: 230px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 20px;
+  margin: 11px;
+  /*Horizontal Vertical Blur Extension*/
+  box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section#cardsProductos .cont-cardproducto .img-pro {
+  width: 100%;
+  height: 185px;
+}
+section#cardsProductos .cont-cardproducto .img-pro img {
+  width: 100%;
+}
+section#cardsProductos .cont-cardproducto .combo-data {
+  display: flex;
+  flex-direction: column;
+}
+section#cardsProductos .cont-cardproducto .combo-data .tit-pro h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #595E60;
+  font-weight: 900;
+  line-height: 22px;
+  text-align: center;
+}
+section#cardsProductos .cont-cardproducto .combo-data .desc-pro h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #595E60;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+section#cardsProductos .cont-cardproducto a {
+  text-decoration: none;
+}
+section#cardsProductos .cont-cardproducto .download-pro {
+  width: 190px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 2s;
+}
+section#cardsProductos .cont-cardproducto .download-pro h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin: 0px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+section#cardsProductos .cont-cardproducto :hover#gas {
+  background-color: #25D366;
+  transition: 2s;
+}
+section#cardsProductos .cont-cardproducto :hover#energia {
+  background-color: #25D366;
+  transition: 2s;
+}
+section#cardsProductos .cont-cardproducto :hover#general {
+  background-color: #25D366;
+  transition: 2s;
+}
+
+/*Mobile Card Productos*/
+@media screen and (max-width: 1170px) {
+  section#cardsProductos .cont-productos {
+    width: 100%;
+    padding: 50px 20px 0px 20px;
+  }
+  section#cardsProductos .cont-productos h1 {
+    font-size: 30px;
+    text-align: left;
+  }
+  section#cardsProductos .gral-productos {
+    width: 100%;
+    padding: 50px 0px;
+  }
+  section#cardsProductos .cont-cardproducto {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin: 10px 0px;
+    flex-direction: row;
+    /*Horizontal Vertical Blur Extension*/
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  section#cardsProductos .cont-cardproducto .img-pro {
+    text-align: center;
+  }
+  section#cardsProductos .cont-cardproducto .img-pro img {
+    width: 170px;
+    height: auto;
+  }
+  section#cardsProductos .cont-cardproducto .combo-data {
+    justify-content: space-between;
+  }
+  section#cardsProductos .cont-cardproducto .combo-data .tit-pro h3 {
+    font-size: 25px;
+    text-align: left;
+  }
+  section#cardsProductos .cont-cardproducto .combo-data .desc-pro h4 {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+  section#cardsProductos .cont-cardproducto .download-pro {
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  section#cardsProductos .cont-cardproducto .download-pro h5 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
   }
 }/*# sourceMappingURL=style.css.map */

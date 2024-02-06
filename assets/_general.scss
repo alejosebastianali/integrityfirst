@@ -1,0 +1,155 @@
+
+/*General Desktop*/
+.color-serv-gral-gas{
+    background-color: $colorGas;
+}
+
+.color-serv-gral-gas01{
+    background-color: $colorGas01;
+}
+
+.color-serv-gral-energia{
+    background-color: $colorEnergia;
+}
+
+.color-serv-gral-energia01{
+    background-color: $colorEnergia01;
+}
+
+.color-serv-gral-servicios{
+    background-color: $colorMarca;
+}
+
+.color-serv-gral-servicios01{
+    background-color: $colorMarca02;
+}
+
+
+section#serviciosGenerales{
+
+    .cont-serv-gral{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 0px 25%;
+
+        .data-serv{
+            width:100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: blue($color: #000000);
+            padding: 150px 50px 150px 0px;
+
+            .tit-gral{
+
+                h1{
+                    font-family: $tipo3;
+                    font-size: 50px;
+                    color: $colorMarca;
+                    font-weight:800;
+                    letter-spacing: 1px;
+                    line-height: 55px;
+                    text-align: left;
+                }
+            }
+
+            .bajada-gral{
+                h2{
+                    font-family: $tipo3;
+                    font-size: 21px;
+                    color: $color1;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    line-height: 22px;
+                    text-align: left;
+                }
+            }
+
+            .descripcion-gral{
+                p{
+                    font-family: $tipo3;
+                    font-size: 14px;
+                    color: $color1;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .imagen-gral{
+            width: 170px;
+            height: auto;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            img{
+                width: 120px;
+                height: auto;
+            }
+        }
+
+    }
+}
+
+/*Mobile General*/
+@media screen and (max-width:1170px){
+
+    section#serviciosGenerales{
+
+        .cont-serv-gral{
+            flex-direction: column;
+            padding: 50px 20px 30px 20px;
+            box-sizing: border-box;
+    
+            .data-serv{
+                width:100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                background-color: blue($color: #000000);
+                padding: 50px 0px 50px 0px;
+    
+                .tit-gral{
+    
+                    h1{
+                        font-family: $tipo3;
+                        font-size:40px;
+                    }
+                }
+    
+                .bajada-gral{
+                    h2{
+                        font-size: 21px;
+                    }
+                }
+    
+                .descripcion-gral{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            .imagen-gral{
+                width: 100%;
+                height: auto;
+                padding: 50px;
+                border-radius: 10px;
+    
+                img{
+                    width: 120px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
