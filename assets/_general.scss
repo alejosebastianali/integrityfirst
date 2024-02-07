@@ -195,6 +195,24 @@ section#informacionGral{
 /*Mobile General*/
 @media screen and (max-width:1170px){
 
+
+    
+.color-serv-gral-servicios01{
+    background-image: url(..//images/back-quienes-somos-mobile.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.color-serv-gral-servicios02{
+    background-image: url(..//images/back-contacto-mobile.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.color-serv-gral-servicios03{
+    background-image: url(..//images/back-certificacion-mobile.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.color-serv-gral-servicios04{
+    background-image: url(..//images/back-laboratorio-mobile.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
     section#serviciosGenerales{
 
         .cont-serv-gral{
