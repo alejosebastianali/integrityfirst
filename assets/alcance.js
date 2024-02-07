@@ -1,4 +1,4 @@
-$('.progress-number').each(function() {
+$('.progress-number').each(function(){
     $(this).animate({
       left: $(this).data('number')
     }, {
