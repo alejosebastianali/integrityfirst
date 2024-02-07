@@ -383,7 +383,7 @@ h6 {
 section#servicios .cont-selector {
   width: 100%;
   height: auto;
-  padding: 160px 12.5%;
+  padding: 80px 12.5% 150px 12.5%;
   background-color: #DFEBE4;
   box-sizing: border-box;
 }
@@ -559,7 +559,6 @@ section#informacion .cont-masinfo .masinfo {
   height: auto;
   display: flex;
   flex-direction: row;
-  link-text-decoration: none;
 }
 section#informacion .cont-masinfo .masinfo a {
   text-decoration: none;
@@ -614,7 +613,7 @@ section#informacion .cont-masinfo .masinfo .masinfo-a .acceso-info .text-informa
   text-align: left;
 }
 section#informacion .cont-masinfo .masinfo .masinfo-b {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
@@ -624,6 +623,10 @@ section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-up {
 section#informacion .cont-masinfo .masinfo .masinfo-b .desplazamiento-down {
   margin-bottom: -120px;
   text-align: center;
+}
+section#informacion .cont-masinfo .masinfo .masinfo-b img {
+  width: 400px;
+  height: auto;
 }
 
 /*Mobile*/
@@ -1743,5 +1746,141 @@ section#quickForm form input#enviar:hover {
   }
   form input#mensaje {
     width: 100%;
+  }
+}
+.cont-data-slider {
+  width: 100%;
+  height: 700px;
+  padding: 150px 20% 100px 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.cont-data-slider .data-slider-a {
+  width: 60%;
+}
+.cont-data-slider .data-slider-a h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.cont-data-slider .data-slider-a h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.cont-data-slider .data-slider-a h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #060A24;
+}
+.cont-data-slider .data-slider-b {
+  width: 40%;
+  text-align: center;
+}
+.cont-data-slider .data-slider-b img {
+  width: 100%;
+  height: auto;
+}
+
+.cont-data-slider#logoIntegritySlider {
+  width: 100%;
+  height: 700px;
+}
+.cont-data-slider#logoIntegritySlider .data-slider-a {
+  display: none;
+}
+.cont-data-slider#logoIntegritySlider .data-slider-b {
+  width: 70%;
+  text-align: center;
+}
+.cont-data-slider#logoIntegritySlider .data-slider-b img {
+  width: 100%;
+  height: 50vh;
+}
+
+.color-gas {
+  background-color: #FFF8E5;
+}
+.color-gas h1 {
+  color: #595E60;
+}
+.color-gas h2 {
+  color: #FFC72F;
+}
+
+.color-energia {
+  background-color: #DFF4F3;
+}
+.color-energia h1 {
+  color: #595E60;
+}
+.color-energia h2 {
+  color: #00A99D;
+}
+
+.imagen-fondo-01 {
+  background-image: url(..//images/slide-integrityfirst-01.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1170px) {
+  .cont-data-slider {
+    width: 100%;
+    height: 600px;
+    padding: 120px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-data-slider .data-slider-a {
+    width: 100%;
+  }
+  .cont-data-slider .data-slider-a h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .cont-data-slider .data-slider-a h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  }
+  .cont-data-slider .data-slider-a h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #060A24;
+  }
+  .cont-data-slider .data-slider-b {
+    width: 100%;
+  }
+  .cont-data-slider .data-slider-b img {
+    width: 100%;
+    height: auto;
+  }
+  .cont-data-slider#logoIntegritySlider {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+  }
+  .cont-data-slider#logoIntegritySlider .data-slider-a {
+    display: none;
+  }
+  .cont-data-slider#logoIntegritySlider .data-slider-b {
+    width: 100%;
+    text-align: center;
+  }
+  .cont-data-slider#logoIntegritySlider .data-slider-b img {
+    width: 100%;
+    height: 70vh;
+  }
+  .imagen-fondo-01#logoIntegritySlider {
+    background-image: url(..//images/slide-integrityfirst-mobile-01.jpg);
+    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */

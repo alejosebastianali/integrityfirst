@@ -1,0 +1,171 @@
+.cont-data-slider{
+    width: 100%;
+    height: 700px;
+    padding: 150px 20% 100px 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+
+    .data-slider-a{
+        width: 60%;
+
+        h1{
+            font-family: $tipo3;
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        h2{
+            font-family: $tipo3;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        h3{
+            font-family: $tipo3;
+            font-size: 20px;
+            font-weight: 300;
+            color: $color1;
+        }
+
+    }
+
+    .data-slider-b{
+        width: 40%;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: auto;
+        } 
+    }
+}
+
+.cont-data-slider#logoIntegritySlider{
+    width: 100%;
+    height: 700px;
+
+    .data-slider-a{
+        display: none;
+    }
+
+    .data-slider-b{
+        width: 70%;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: 50vh;
+        } 
+
+    }
+
+}
+
+.color-gas{
+    background-color:$colorGas01;
+    //radial-gradient(circle, rgba(255,248,229,1) 0%, rgba(250,224,154,1) 100%);
+
+    h1{
+        color: $color4;
+    }
+
+    h2{
+        color: $colorGas;
+    }
+}
+
+.color-energia{
+    background-color:$colorEnergia01;
+    //background: radial-gradient(circle, rgba(223,244,243,1) 0%, rgba(215,251,249,1) 100%);
+    h1{
+        color: $color4;
+    }
+
+    h2{
+        color: $colorEnergia;
+    }
+}
+
+.imagen-fondo-01{
+    background-image: url(..//images/slide-integrityfirst-01.jpg);
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width:1170px){
+
+    .cont-data-slider{
+        width: 100%;
+        height: 600px;
+        padding: 120px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+
+    
+        .data-slider-a{
+            width: 100%;
+            h1{
+                font-family: $tipo3;
+                font-size: 36px;
+                font-weight: 800;
+            }
+    
+            h2{
+                font-family: $tipo3;
+                font-size: 20px;
+            }
+    
+            h3{
+                font-family: $tipo3;
+                font-size: 16px;
+                font-weight: 300;
+                color: $color1;
+            }
+        }
+
+        .data-slider-b{
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: auto;
+            } 
+    
+        }
+    }
+
+    .cont-data-slider#logoIntegritySlider{
+        width: 100%;
+        height: 600px;
+        padding: 20px;
+    
+        .data-slider-a{
+            display: none;
+        }
+    
+        .data-slider-b{
+            width: 100%;
+            text-align: center;
+    
+            img{
+                width: 100%;
+                height: 70vh;
+            } 
+    
+        }
+    
+    }
+
+    .imagen-fondo-01#logoIntegritySlider{
+        background-image: url(..//images/slide-integrityfirst-mobile-01.jpg);
+        background-size: cover;
+    }
+
+}

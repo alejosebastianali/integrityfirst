@@ -15,10 +15,6 @@ section#informacion{
                 text-decoration: none;
             }
 
-            link:{
-                text-decoration: none;
-            }
-
             .masinfo-a{
                 width: 100%;
                 height: auto;
@@ -83,7 +79,7 @@ section#informacion{
             }
 
             .masinfo-b{
-                width: 50%;
+                width: 100%;
                 height: auto;
 
                 .desplazamiento-up{
@@ -94,6 +90,11 @@ section#informacion{
                 .desplazamiento-down{
                     margin-bottom: -120px;
                     text-align: center;
+                }
+
+                img{
+                    width: 400px;
+                    height: auto;
                 }
 
 
