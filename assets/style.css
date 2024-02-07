@@ -1020,11 +1020,35 @@ section#alcance .cont-alcance .progress-number {
 }
 
 .color-serv-gral-servicios {
-  background-color: #005F27;
+  background-color: rgba(0, 95, 39, 0.5);
 }
 
 .color-serv-gral-servicios01 {
-  background-color: #DFEBE4;
+  background-image: url(..//images/back-quienes-somos-desktop.jpg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.color-serv-gral-servicios02 {
+  background-image: url(..//images/back-contacto-desktop.jpg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.color-serv-gral-servicios03 {
+  background-image: url(..//images/back-certificacion-desktop.jpg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.color-serv-gral-servicios04 {
+  background-image: url(..//images/back-laboratorio-desktop.jpg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 section#serviciosGenerales .cont-serv-gral {
@@ -1041,13 +1065,11 @@ section#serviciosGenerales .cont-serv-gral .data-serv {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: 0;
   padding: 150px 50px 150px 0px;
 }
 section#serviciosGenerales .cont-serv-gral .data-serv .tit-gral h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
-  color: #005F27;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 55px;
@@ -1056,7 +1078,6 @@ section#serviciosGenerales .cont-serv-gral .data-serv .tit-gral h1 {
 section#serviciosGenerales .cont-serv-gral .data-serv .bajada-gral h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
-  color: #060A24;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 22px;
@@ -1065,10 +1086,21 @@ section#serviciosGenerales .cont-serv-gral .data-serv .bajada-gral h2 {
 section#serviciosGenerales .cont-serv-gral .data-serv .descripcion-gral p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #060A24;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv #general {
+  color: #005F27;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv #generalSubtitulo {
+  color: #060A24;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv #generalData {
+  color: #595E60;
+}
+section#serviciosGenerales .cont-serv-gral .data-serv #secciones {
+  color: #fff;
 }
 section#serviciosGenerales .cont-serv-gral .imagen-gral {
   width: 170px;
@@ -1083,6 +1115,51 @@ section#serviciosGenerales .cont-serv-gral .imagen-gral {
 section#serviciosGenerales .cont-serv-gral .imagen-gral img {
   width: 120px;
   height: auto;
+}
+
+section#informacionGral .cont-info-general {
+  width: 100%;
+  padding: 100px 25%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section#informacionGral .cont-info-general .info-gral-a {
+  width: 75%;
+  height: auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+section#informacionGral .cont-info-general .info-gral-b {
+  width: 25%;
+  height: auto;
+  box-sizing: border-box;
+}
+section#informacionGral .cont-info-general .info-gral-b img {
+  width: 100%;
+  height: auto;
+}
+section#informacionGral .cont-info-general h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #005F27;
+  letter-spacing: 1px;
+}
+section#informacionGral .cont-info-general p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666B6E;
+  margin: 10px 0px;
+}
+section#informacionGral .cont-info-general .align-izq {
+  text-align: left;
+}
+section#informacionGral .cont-info-general .align-der {
+  text-align: right;
 }
 
 /*Mobile General*/
@@ -1119,6 +1196,39 @@ section#serviciosGenerales .cont-serv-gral .imagen-gral img {
   section#serviciosGenerales .cont-serv-gral .imagen-gral img {
     width: 120px;
     height: auto;
+  }
+  section#informacionGral .cont-info-general {
+    width: 100%;
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: left;
+  }
+  section#informacionGral .cont-info-general .info-gral-a {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  section#informacionGral .cont-info-general .info-gral-b {
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+  section#informacionGral .cont-info-general .info-gral-b img {
+    width: 100%;
+    height: auto;
+  }
+  section#informacionGral .cont-info-general h3 {
+    font-size: 36px;
+    text-align: left;
+  }
+  section#informacionGral .cont-info-general p {
+    font-size: 18px;
+    text-align: left;
+  }
+  section#informacionGral .cont-info-general .align-izq {
+    text-align: left;
+  }
+  section#informacionGral .cont-info-general .align-der {
+    text-align: right;
   }
 }
 section#cardsProductos .borde-card#cardGas {
@@ -1286,5 +1396,340 @@ section#cardsProductos .cont-cardproducto :hover#general {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1px;
+  }
+}
+section#formulario .cont-formulario {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  box-sizing: border-box;
+  background-color: #404345;
+}
+section#formulario .cont-formulario .cont-tit-form {
+  width: 1050px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section#formulario .cont-formulario .cont-tit-form .tit-form-a {
+  width: 40%;
+}
+section#formulario .cont-formulario .cont-tit-form .tit-form-a h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+}
+section#formulario .cont-formulario .cont-tit-form .tit-form-b {
+  width: 40%;
+}
+section#formulario .cont-formulario .cont-tit-form .tit-form-b h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  text-align: right;
+}
+section#formulario .cont-datos-whatsapp {
+  width: 100%;
+  height: auto;
+  padding: 100px 25%;
+  box-sizing: border-box;
+}
+section#formulario .cont-datos-whatsapp h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #005F27;
+  text-align: center;
+}
+section#formulario .cont-datos-whatsapp h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+section#formulario .cont-btn-cuadrado {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #25D366;
+  margin: 20px auto;
+  cursor: pointer;
+}
+section#formulario .cont-btn-cuadrado .texto {
+  width: 200px;
+  text-align: center;
+}
+section#formulario .cont-btn-cuadrado .texto h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #25D366;
+  margin: 0px;
+  text-transform: uppercase;
+}
+section#formulario .cont-btn-cuadrado .imagen {
+  width: 50px;
+  height: 38px;
+  background-color: #25D366;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+section#formulario .cont-btn-cuadrado .imagen img {
+  width: 20px;
+  height: 20px;
+}
+section#formulario .cont-btn-cuadrado:hover {
+  background-color: #DFEBE4;
+  color: #fff;
+}
+section#formulario a {
+  text-decoration: none;
+}
+section#formulario form {
+  width: 1050px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+section#formulario form input {
+  border: 0px;
+  margin: 10px 0px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+section#formulario form input#nombre, section#formulario form #empresa, section#formulario form #email, section#formulario form #telefono {
+  width: 500px;
+}
+section#formulario form input#mensaje {
+  width: 1050px;
+}
+section#formulario form input#enviar {
+  width: 140px;
+  height: 60px;
+  background-color: #FFC72F;
+  border-radius: 30px;
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+  color: #404345;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+section#formulario form input#enviar:hover {
+  background-color: #595E60;
+  color: #fff;
+}
+section#formulario form input#enviar:active {
+  background-color: #005F27;
+}
+
+@media screen and (max-width: 1170px) {
+  section#formulario .cont-datos-whatsapp {
+    padding: 50px 20px;
+  }
+  section#formulario .cont-datos-whatsapp h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #005F27;
+    text-align: left;
+  }
+  section#formulario .cont-datos-whatsapp h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+  section#formulario .cont-datos-whatsapp .salto {
+    display: none;
+  }
+  section#formulario .cont-btn-cuadrado {
+    width: 100%;
+    height: 50px;
+  }
+  section#formulario .cont-btn-cuadrado .texto {
+    width: 100%;
+    text-align: center;
+  }
+  section#formulario .cont-btn-cuadrado .texto h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  section#formulario .cont-btn-cuadrado .imagen {
+    width: 70px;
+    height: 100%;
+  }
+  section#formulario .cont-btn-cuadrado .imagen img {
+    width: 30px;
+    height: 30px;
+  }
+  section#formulario .cont-formulario {
+    padding: 30px;
+  }
+  section#formulario .cont-formulario .cont-tit-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  section#formulario .cont-formulario .cont-tit-form .tit-form-a {
+    width: 100%;
+  }
+  section#formulario .cont-formulario .cont-tit-form .tit-form-b {
+    width: 100%;
+  }
+  section#formulario .cont-formulario .cont-tit-form .tit-form-b h4 {
+    text-align: left;
+  }
+  section#formulario form {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  section#formulario form label {
+    width: 100%;
+  }
+  section#formulario form input#nombre, section#formulario form #empresa, section#formulario form #email, section#formulario form #telefono {
+    width: 100%;
+  }
+  section#formulario form input#mensaje {
+    width: 100%;
+  }
+  section#formulario form input#enviar {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 20px 0px;
+  }
+}
+section#quickForm .cont-quick-formulario {
+  width: 300px;
+  height: 300px;
+  padding: 0px 0px 15px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+section#quickForm .cont-quick-formulario .cont-tit-form {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section#quickForm .cont-quick-formulario .cont-tit-form .tit-form-a {
+  width: 100%;
+}
+section#quickForm .cont-quick-formulario .cont-tit-form .tit-form-a h3 {
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  margin: 0px 0px 10px 0px;
+}
+section#quickForm .cont-quick-formulario .cont-tit-form .tit-form-b {
+  width: 40%;
+}
+section#quickForm .cont-quick-formulario .cont-tit-form .tit-form-b h4 {
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  text-align: right;
+}
+section#quickForm form {
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+section#quickForm form input {
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid 0;
+}
+section#quickForm form input#enviar {
+  width: 100px;
+  height: 40px;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: blue;
+  border-radius: 3px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  font-family: arial;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  transition: 0.9s;
+}
+section#quickForm form input#enviar:hover {
+  background-color: #005F27;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+@media screen and (max-width: 1170px) {
+  .cont-formulario {
+    padding: 30px;
+  }
+  .cont-formulario .cont-tit-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .cont-formulario .cont-tit-form .tit-form-a {
+    width: 100%;
+  }
+  .cont-formulario .cont-tit-form .tit-form-b {
+    width: 100%;
+  }
+  .cont-formulario .cont-tit-form .tit-form-b h4 {
+    text-align: left;
+  }
+  form {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  form label {
+    width: 100%;
+  }
+  form input#nombre, form #empresa, form #email, form #telefono {
+    width: 100%;
+  }
+  form input#mensaje {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

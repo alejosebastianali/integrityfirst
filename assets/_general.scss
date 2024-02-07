@@ -17,13 +17,36 @@
 }
 
 .color-serv-gral-servicios{
-    background-color: $colorMarca;
+    background-color: $colorServicios;
 }
 
 .color-serv-gral-servicios01{
-    background-color: $colorMarca02;
+    background-image: url(..//images/back-quienes-somos-desktop.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
+.color-serv-gral-servicios02{
+    background-image: url(..//images/back-contacto-desktop.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.color-serv-gral-servicios03{
+    background-image: url(..//images/back-certificacion-desktop.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.color-serv-gral-servicios04{
+    background-image: url(..//images/back-laboratorio-desktop.jpg), linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
 
 section#serviciosGenerales{
 
@@ -41,7 +64,6 @@ section#serviciosGenerales{
             height: auto;
             display: flex;
             flex-direction: column;
-            background-color: blue($color: #000000);
             padding: 150px 50px 150px 0px;
 
             .tit-gral{
@@ -49,19 +71,18 @@ section#serviciosGenerales{
                 h1{
                     font-family: $tipo3;
                     font-size: 50px;
-                    color: $colorMarca;
                     font-weight:800;
                     letter-spacing: 1px;
                     line-height: 55px;
                     text-align: left;
                 }
+
             }
 
             .bajada-gral{
                 h2{
                     font-family: $tipo3;
                     font-size: 21px;
-                    color: $color1;
                     font-weight: 700;
                     letter-spacing: 1px;
                     line-height: 22px;
@@ -73,11 +94,26 @@ section#serviciosGenerales{
                 p{
                     font-family: $tipo3;
                     font-size: 14px;
-                    color: $color1;
                     font-weight: 400;
                     line-height: 22px;
                     text-align: left;
                 }
+            }
+
+            #general{
+                color: $colorMarca;
+            }
+
+            #generalSubtitulo{
+                color: $color1;
+            }
+
+            #generalData{
+                color: $color4;
+            }
+
+            #secciones{
+                color: #fff;
             }
         }
 
@@ -90,6 +126,7 @@ section#serviciosGenerales{
             justify-content: center;
             align-items: center;
             align-content: center;
+            //mix-blend-mode: multiply;
 
             img{
                 width: 120px;
@@ -99,6 +136,61 @@ section#serviciosGenerales{
 
     }
 }
+
+section#informacionGral{
+    .cont-info-general{
+        width: 100%;
+        padding: 100px 25%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .info-gral-a{
+            width: 75%;
+            height: auto;
+            padding:0px 20px;
+            box-sizing: border-box;
+        }
+
+        .info-gral-b{
+            width: 25%;
+            height: auto;
+            box-sizing: border-box;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        h3{
+            font-family: $tipo3;
+            font-size: 36px;
+            font-weight: 700;
+            color: $colorMarca;
+            letter-spacing: 1px;
+        }
+
+        p{
+            font-family: $tipo3;
+            font-size: 18px;
+            font-weight: 400;
+            color: $color3;
+            margin: 10px 0px;
+        }
+
+        .align-izq{
+            text-align: left ;
+        }
+
+        .align-der{
+            text-align: right ;
+        }
+    }
+}
+
 
 /*Mobile General*/
 @media screen and (max-width:1170px){
@@ -149,6 +241,49 @@ section#serviciosGenerales{
                     width: 120px;
                     height: auto;
                 }
+            }
+        }
+    }
+
+    section#informacionGral{
+        .cont-info-general{
+            width: 100%;
+            padding: 20px 20px;
+            flex-direction: column;
+            align-items: left;
+    
+            .info-gral-a{
+                width: 100%;
+                padding:20px 0px 0px 0px;
+            }
+    
+            .info-gral-b{
+                width: 100%;
+                height: auto;
+                order: 2;
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            h3{
+                font-size: 36px;
+                text-align: left;
+            }
+    
+            p{
+                font-size: 18px;
+                text-align: left;
+            }
+    
+            .align-izq{
+                text-align: left ;
+            }
+    
+            .align-der{
+                text-align: right ;
             }
         }
     }

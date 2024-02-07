@@ -33,7 +33,10 @@ $colorGas02:#DFAE29;
 $colorEnergia:#00A99D;
 $colorEnergia01: #DFF4F3;
 $colorEnergia02: #006A62;
+
 $colorAsistencia:#005F27;
+
+$colorServicios: rgba(0,95,39,.5);
 
 $colorMarca:#005F27;
 $colorMarcaComple:#FFC72F;
@@ -52,4 +55,6 @@ $colorMarcaPush:#00471D;
 @import "_alcance";
 @import "_general";
 @import "cardProductos";
+@import "_form";
+@import "_quick_form";
 

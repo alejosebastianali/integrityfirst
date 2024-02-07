@@ -1,0 +1,274 @@
+section#formulario{
+    
+    .cont-formulario{
+        width: 100%;
+        height: auto;
+        padding: 150px 0px;
+        box-sizing: border-box;
+        background-color: $color5;
+    
+        .cont-tit-form{
+            width: 1050px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+                .tit-form-a{
+                    width: 40%;
+    
+                    h3{
+                        font-family: $tipo3;
+                        font-size:35px;
+                        color:#fff ;
+                        font-weight: 600;
+                    }
+                }
+    
+                .tit-form-b{
+                    width: 40%;
+    
+                    h4{
+                        font-family: $tipo3;
+                        font-size: 14px;
+                        color:#fff ; 
+                        font-weight: normal;
+                        text-align: right;
+                    }
+                }
+        }
+    }
+
+    .cont-datos-whatsapp{
+
+        width: 100%;
+        height: auto;
+        padding: 100px 25%;
+        box-sizing: border-box;
+        
+        h2{
+            font-family: $tipo3;
+            font-size: 36px;
+            font-weight: 700;
+            color: $colorMarca;
+            text-align: center;
+        }
+
+        h3{
+            font-family: $tipo3;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    .cont-btn-cuadrado{
+        width: 250px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        border: 1px solid $colorWhatsapp;
+        margin: 20px auto;
+        cursor: pointer;
+    
+            .texto{
+                width: 200px;
+                text-align: center;
+    
+                h5{
+                    font-family: $tipo1;
+                    font-size: 14px;
+                    font-weight: 800;
+                    color: $colorWhatsapp;
+                    margin: 0px;
+                    text-transform: uppercase;
+                }
+            }
+    
+            .imagen{
+                width: 50px;
+                height: 38px;
+                background-color: $colorWhatsapp;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+    
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            &:hover{
+                background-color:$colorMarca02 ;
+                color: #fff;
+            }
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    form{
+        width: 1050px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    
+        input{
+            border: 0px;
+            margin: 10px 0px;
+            padding: 20px;
+            border-radius: 6px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+        }
+    
+            input#nombre, #empresa, #email, #telefono{
+                    width: 500px;
+                }
+    
+            input#mensaje{
+                width: 1050px;
+            }
+    
+            input#enviar{
+                width: 140px;
+                height: 60px ;
+                background-color: $colorMarcaComple;
+                border-radius:30px ;
+                border: 0px;
+                padding: 10px;
+                cursor: pointer;
+                color: $color5;
+                font-family: $tipo3;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 800;
+    
+                    &:hover{
+                        background-color: $color4;
+                        color:#fff;
+                    }
+    
+                    &:active{
+                        background-color: $colorMarca;
+                    }
+    
+            }
+    
+    }
+
+}
+
+@media screen and (max-width:1170px){
+
+section#formulario{
+
+    .cont-datos-whatsapp{
+
+        padding: 50px 20px;
+        
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            color: $colorMarca;
+            text-align: left;
+        }
+
+        h3{
+            font-family: $tipo3;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .salto{
+            display: none;
+        }
+    }
+
+    .cont-btn-cuadrado{
+        width: 100%;
+        height: 50px;
+    
+            .texto{
+                width: 100%;
+                text-align: center;
+    
+                h5{
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+    
+            .imagen{
+                width: 70px;
+                height: 100%;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    }
+
+    .cont-formulario{
+        padding: 30px;
+
+        .cont-tit-form{
+            width: 100%;
+            flex-direction: column;
+    
+                .tit-form-a{
+                    width: 100%;
+                }
+    
+                .tit-form-b{
+                    width: 100%;
+                    h4{
+                        text-align: left;
+                    }
+                }
+        }
+    }
+
+    form{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+
+        label{
+            width: 100%;
+        }
+
+        input#nombre, #empresa, #email, #telefono{
+            width: 100%;
+        }
+
+        input#mensaje{
+            width: 100%;
+        }
+
+        input#enviar{
+            width: 200px;
+            height: 60px ;
+            border-radius:30px;
+            margin: 20px 0px;
+        }
+    }
+
+}
+    
+}

@@ -1,0 +1,139 @@
+section#quickForm{
+
+    .cont-quick-formulario{
+        width: 300px;
+        height: 300px;
+        padding: 0px 0px 15px 0px;
+        box-sizing: border-box;
+        background-color: #fff;
+    
+        .cont-tit-form{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+                .tit-form-a{
+                    width: 100%;
+    
+                    h3{
+                        font-family: arial;
+                        font-size:14px ;
+                        color:black;
+                        font-weight: normal;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+    
+                .tit-form-b{
+                    width: 40%;
+    
+                    h4{
+                        font-family:arial ;
+                        font-size: 14px;
+                        color:black ; 
+                        font-weight: normal;
+                        text-align: right;
+                    }
+                }
+        }
+    }
+    
+    form{
+        width: 600px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    
+        input{
+            width:280px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border: 1px solid green($color: #000000);
+        }
+    
+        input#enviar{
+                width: 100px;
+                height: 40px;
+                margin:5px  auto;
+                padding:5px ;
+                background-color:blue;
+                border-radius: 3px;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                border: 0px;
+
+                font-family:arial;
+                font-size: 16px;
+                color: #ffffff;
+                text-align: center;
+                font-weight: normal;
+
+                transition: .9s;
+
+                &:hover{
+                    background-color:$colorMarca;
+                    cursor: pointer;
+                    transition: .9s;
+                }            
+            }
+        }
+}
+
+
+
+@media screen and (max-width:1170px){
+
+    .cont-formulario{
+        padding: 30px;
+
+        .cont-tit-form{
+            width: 100%;
+            flex-direction: column;
+    
+                .tit-form-a{
+                    width: 100%;
+                }
+    
+                .tit-form-b{
+                    width: 100%;
+                    h4{
+                        text-align: left;
+                    }
+                }
+        }
+    }
+
+    form{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+
+        label{
+            width: 100%;
+        }
+
+        input#nombre, #empresa, #email, #telefono{
+            width: 100%;
+        }
+
+        input#mensaje{
+            width: 100%;
+        }
+    }
+    
+}
