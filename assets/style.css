@@ -1767,22 +1767,79 @@ section#quickForm form input#enviar:hover {
   font-size: 50px;
   font-weight: 800;
   letter-spacing: 1px;
+  order: 1;
 }
 .cont-data-slider .data-slider-a h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
+  order: 2;
 }
 .cont-data-slider .data-slider-a h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  line-height: 30px;
   font-weight: 300;
   color: #060A24;
+  order: 3;
+}
+.cont-data-slider .data-slider-a a {
+  text-decoration: none;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 20px 0px;
+  order: 4;
+  transition: 2s;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider#gas {
+  border: 2px solid #FFC72F;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider#energia {
+  border: 2px solid #00A99D;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider .color-txt-slider {
+  color: #595E60;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider:hover#gas {
+  width: 300px;
+  height: 50px;
+  transition: 2s;
+  background-color: #FFC72F;
+  border-radius: 10px;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider:hover#gas h5 {
+  color: #fff;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider:hover#energia {
+  width: 300px;
+  height: 50px;
+  transition: 2s;
+  background-color: #00A99D;
+  border-radius: 10px;
+}
+.cont-data-slider .data-slider-a .cont-btn-slider:hover#energia h5 {
+  color: #fff;
 }
 .cont-data-slider .data-slider-b {
   width: 40%;
   text-align: center;
+  order: 5;
 }
 .cont-data-slider .data-slider-b img {
   width: 100%;
@@ -1792,9 +1849,18 @@ section#quickForm form input#enviar:hover {
 .cont-data-slider#logoIntegritySlider {
   width: 100%;
   height: 700px;
+  flex-direction: column;
 }
 .cont-data-slider#logoIntegritySlider .data-slider-a {
-  display: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.cont-data-slider#logoIntegritySlider .data-slider-a h1 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0px;
 }
 .cont-data-slider#logoIntegritySlider .data-slider-b {
   width: 70%;
@@ -1802,7 +1868,8 @@ section#quickForm form input#enviar:hover {
 }
 .cont-data-slider#logoIntegritySlider .data-slider-b img {
   width: 100%;
-  height: 50vh;
+  height: auto;
+  filter: drop-shadow(1px 1px 20px #000);
 }
 
 .color-gas {
@@ -1833,8 +1900,8 @@ section#quickForm form input#enviar:hover {
 @media screen and (max-width: 1170px) {
   .cont-data-slider {
     width: 100%;
-    height: 600px;
-    padding: 120px 20px 50px 20px;
+    height: auto;
+    padding: 100px 20px 50px 20px;
     display: flex;
     flex-direction: column;
   }
@@ -1843,21 +1910,30 @@ section#quickForm form input#enviar:hover {
   }
   .cont-data-slider .data-slider-a h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 800;
+    order: 1;
   }
   .cont-data-slider .data-slider-a h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    order: 2;
   }
   .cont-data-slider .data-slider-a h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #060A24;
+    order: 3;
+  }
+  .cont-data-slider .data-slider-a .cont-btn-slider {
+    margin-left: auto;
+    margin-right: auto;
+    order: 5;
   }
   .cont-data-slider .data-slider-b {
     width: 100%;
+    order: 4;
   }
   .cont-data-slider .data-slider-b img {
     width: 100%;
@@ -1869,18 +1945,26 @@ section#quickForm form input#enviar:hover {
     padding: 20px;
   }
   .cont-data-slider#logoIntegritySlider .data-slider-a {
-    display: none;
+    display: block;
+    order: 2;
+  }
+  .cont-data-slider#logoIntegritySlider .data-slider-a h1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0px;
   }
   .cont-data-slider#logoIntegritySlider .data-slider-b {
     width: 100%;
     text-align: center;
+    order: 1;
   }
   .cont-data-slider#logoIntegritySlider .data-slider-b img {
     width: 100%;
-    height: 70vh;
+    height: auto;
   }
   .imagen-fondo-01#logoIntegritySlider {
-    background-image: url(..//images/slide-integrityfirst-mobile-01.jpg);
+    background-image: url(..//images/slide-integrityfirst-mobile-01.jpg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
     background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */
